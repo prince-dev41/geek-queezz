@@ -1,0 +1,167 @@
+[
+    {
+        "question": "Qu'est-ce que 'NaN' en JS ?",
+        "options": [
+            "Not a Number",
+            "Never-ending Array",
+            "Null and None",
+            "New Abstract Notation"
+        ],
+        "answer": 0,
+        "difficulty": "easy"
+    },
+    {
+        "question": "Quel opérateur vérifie à la fois la valeur et le type ?",
+        "options": [
+            "==",
+            "===",
+            "=",
+            "!=="
+        ],
+        "answer": 1,
+        "difficulty": "easy"
+    },
+    {
+        "question": "Comment déclarer une constante en ES6 ?",
+        "options": [
+            "var",
+            "let",
+            "const",
+            "static"
+        ],
+        "answer": 2,
+        "difficulty": "easy"
+    },
+    {
+        "question": "Que retourne typeof null ?",
+        "options": [
+            "null",
+            "object",
+            "undefined",
+            "number"
+        ],
+        "answer": 1,
+        "difficulty": "medium"
+    },
+    {
+        "question": "Quelle méthode convertit un objet en JSON ?",
+        "options": [
+            "JSON.parse()",
+            "JSON.stringify()",
+            "toJSON()",
+            "serialize()"
+        ],
+        "answer": 1,
+        "difficulty": "easy"
+    },
+    {
+        "question": "Que fait [1, 2, 3].map(n => n * 2) ?",
+        "options": [
+            "[2]",
+            "[1, 2, 3, 1, 2, 3]",
+            "[2, 4, 6]",
+            "Erreur"
+        ],
+        "answer": 2,
+        "difficulty": "easy"
+    },
+    {
+        "question": "Comment cloner un tableau superficiellement ?",
+        "options": [
+            "arr.clone()",
+            "[...arr]",
+            "arr.copy()",
+            "JSON.clone(arr)"
+        ],
+        "answer": 1,
+        "difficulty": "medium"
+    },
+    {
+        "question": "Que vaut [] + [] ?",
+        "options": [
+            "[]",
+            "[[]]",
+            "\"\"",
+            "0"
+        ],
+        "answer": 2,
+        "difficulty": "hard"
+    },
+    {
+        "question": "Quelle méthode permet d'attendre plusieurs promesses ?",
+        "options": [
+            "Promise.any()",
+            "Promise.all()",
+            "Promise.wait()",
+            "Promise.queue()"
+        ],
+        "answer": 1,
+        "difficulty": "medium"
+    },
+    {
+        "question": "Comment créer une fonction génératrice ?",
+        "options": [
+            "function*()",
+            "generator()",
+            "function~()",
+            "yield function()"
+        ],
+        "answer": 0,
+        "difficulty": "hard"
+    },
+    {
+        "question": "Qu'est-ce que le hoisting en JS ?",
+        "options": [
+            "Déplacement des déclarations en haut de leur scope",
+            "Un outil de compilation",
+            "Une méthode pour optimiser les boucles",
+            "Une fonctionnalité de ES2022"
+        ],
+        "answer": 0,
+        "difficulty": "medium"
+    },
+    {
+        "question": "Que fait l'opérateur '??' ?",
+        "options": [
+            "Vérifie l'égalité stricte",
+            "Opérateur de coalescence des nuls",
+            "Opérateur bitwise",
+            "Syntaxe invalide"
+        ],
+        "answer": 1,
+        "difficulty": "medium"
+    },
+    {
+        "question": "Comment empêcher la modification d'un objet ?",
+        "options": [
+            "Object.freeze()",
+            "Object.lock()",
+            "Object.seal()",
+            "Object.immutable()"
+        ],
+        "answer": 0,
+        "difficulty": "hard"
+    },
+    {
+        "question": "Quelle méthode trouve le premier élément répondant à une condition ?",
+        "options": [
+            "find()",
+            "search()",
+            "get()",
+            "filter()"
+        ],
+        "answer": 0,
+        "difficulty": "easy"
+    },
+    {
+        "question": "Quelle est la différence entre let et var ?",
+        "options": [
+            "let a un scope de bloc, var de fonction",
+            "let est plus rapide",
+            "var est obsolète",
+            "Aucune différence"
+        ],
+        "answer": 0,
+        "difficulty": "medium"
+    }
+]

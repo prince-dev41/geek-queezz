@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Courier Prime";
+}
+
+button{
+    font-family: "Press Start 2P";
+}
+
+
+@font-face {
+    font-family: 'DS-Digital Normal';
+    font-style: normal;
+    font-weight: normal;
+    src: local('DS-Digital Normal'), url('/assets/fonts/DS-DIGI.woff') format('woff');
+}
+
+
+@font-face {
+    font-family: 'DS-Digital Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('DS-Digital Italic'), url('/assets/fonts/DS-DIGIDS-DIGII.woff') format('woff');
+}
+
+
+@font-face {
+    font-family: 'DS-Digital Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('DS-Digital Bold'), url('/assets/fonts/DS-DIGIDS-DIGIB.woff') format('woff');
+}
+
+
+@font-face {
+    font-family: 'DS-Digital Bold Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('DS-Digital Bold Italic'), url('/assets/fonts/DS-DIGIDS-DIGIT.woff') format('woff');
+}
+
+.glitch-text {
+    font-family: 'DS-Digital Normal', 'Press Start 2P', cursive;
+    position: relative;
+    color: #00ff00;
+    /* Vert retro */
+}
+
+.glitch-text::before,
+.glitch-text::after {
+    content: attr(data-text);
+    /* Utilise l'attribut data-text */
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.8;
+}
+
+.glitch-text::before {
+    color: #ff00ff;
+    /* Rose néon */
+    z-index: -1;
+    animation: glitch 3s infinite;
+}
+
+.glitch-text::after {
+    color: #00ffff;
+    /* Cyan */
+    z-index: -2;
+    animation: glitch 2s reverse infinite;
+}
+
+@keyframes glitch {
+    0% {
+        transform: translate(0);
+    }
+
+    20% {
+        transform: translate(-3px, 3px);
+    }
+
+    40% {
+        transform: translate(-3px, -3px);
+    }
+
+    60% {
+        transform: translate(3px, 3px);
+    }
+
+    80% {
+        transform: translate(3px, -3px);
+    }
+
+    100% {
+        transform: translate(0);
+    }
+}
