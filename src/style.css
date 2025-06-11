@@ -10,6 +10,10 @@ button{
 }
 
 
+li{
+    list-style: none;
+}
+
 @font-face {
     font-family: 'DS-Digital Normal';
     font-style: normal;
@@ -54,6 +58,7 @@ button{
     /* Utilise l'attribut data-text */
     position: absolute;
     top: 0;
+    font-size: 36px;
     left: 0;
     opacity: 0.8;
 }

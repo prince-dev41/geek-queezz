@@ -10,7 +10,7 @@
     <meta name="keywords"
         content="Geek, Quiz, HTML, CSS, JavaScript, Jeu web, Développement, Retro game, Dev quiz, JS Game, Frontend, Terminal, Pixel, Glitch">
     <meta name="author" content="Prince Ekpinse">
-    <link rel="icon" href="/assets/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/assets/images/favicon.ico" type="image/x-icon">
     <meta property="og:title" content="Geek_Queezz - Le quiz rétro des développeurs">
     <meta property="og:description"
         content="Teste ton niveau en HTML, CSS et JS dans un jeu rétro-geek plein de glitchs et de style.">
@@ -30,26 +30,29 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Press+Start+2P&display=swap"
         rel="stylesheet">
-    <title>Geek_Quizz - Learn as a geek throught fun quizzs</title>
 </head>
 
-<body class="bg-[#0d0d0d] text-gray-50 flex  items-center min-w-screen min-h-screen justify-center">
+<body class="bg-[#0d0d0d] text-gray-50 flex items-center min-w-screen min-h-screen justify-center">
     <!-- L'écran de bienvenue pour les premiers users -->
-    <div class="welcome flex flex-col gap-5 p-5 mt-52 items-center justify-center max-w-[600px]">
+    <div class="welcome flex md:border flex-col gap-3 p-6 h-[600px] items-center justify-center md:max-w-[600px]">
         <h1 class="glitch-text text-4xl" data-text="Welcome on Geek_Game">Welcome on Geek_Quizz</h1>
-        <h2 class="text-red-600 md:text-2xl text-center">Vous etes la bienvenue chers geek...</h2>
+        <h2 class="text-red-600 md:text-xl text-center">Vous etes la bienvenue chers geek...</h2>
+        <img src="/assets/images/logo.png" alt="">
         <div class="greeting flex flex-col gap-4 content-center w-[500px] m-auto text-center">
             <h1>[ SYSTEM_BOOTING_... ]</h1>
             <li>> Initialisation du protocole GEEK_QUEEZZ...</li>
             <li>> Connexion au cerveau du joueur...</li>
 
             <h1>[ ACCÈS RESTREINT ]</h3>
-                <li>>Entrez votre passe (pseudo de geek) : <input class="border border-gray-300 outline-none"
-                        type="text"> </li>
+                <li> > Entrez votre passe (pseudo de geek) :</li>
         </div>
-        <div class="questions"></div>
-        <button
-            class="border-cyan-500 border p-10 w-[250px] cursor-pointer min-h-[50px] hover:bg-neutral-700 hover:scale-90 duration-200 transition-all border-b-6 border-b-[#ff00ff]">Commencer</button>
+        <form class="flex flex-col gap-5" action="" id="pseudo">
+            <input name="pseudo" id="pseudo" class="border border-gray-300 outline-none" type="text" placeholder="votre pseudo de geek">
+            <button type="submit"
+                class="border-cyan-500 border p-10 w-[250px] cursor-pointer min-h-[50px] hover:bg-neutral-700 hover:scale-90 duration-200 transition-all border-b-6 border-b-[#ff00ff]">
+                Commencer
+            </button>
+        </form>
     </div>
     <!-- <script src="script.js"></script> -->
     <script defer src="https://cloud.umami.is/script.js"
