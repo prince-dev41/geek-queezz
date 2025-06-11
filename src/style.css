@@ -18,7 +18,7 @@ li{
     font-family: 'DS-Digital Normal';
     font-style: normal;
     font-weight: normal;
-    src: local('DS-Digital Normal'), url('../assets/fonts/DS-DIGI.woff') format('woff');
+    src: local('DS-Digital Normal'), url('fonts/DS-DIGI.woff') format('woff');
 }
 
 
