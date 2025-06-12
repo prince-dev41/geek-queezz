@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geek_Queezz - Teste ton cerveau de développeur</title>
+    <meta name="description"
+        content="Geek_Queezz est un jeu quiz rétro-geek pour tester tes connaissances en HTML, CSS et JavaScript. Ambiance terminal, polices pixel, et glitch power. 3 essais. Un seul top score.">
+    <meta name="keywords"
+        content="Geek, Quiz, HTML, CSS, JavaScript, Jeu web, Développement, Retro game, Dev quiz, JS Game, Frontend, Terminal, Pixel, Glitch">
+    <meta name="author" content="Prince Ekpinse">
+    <link rel="icon" href="/public/images/favicon.ico" type="image/x-icon">
+    <meta property="og:title" content="Geek_Queezz - Le quiz rétro des développeurs">
+    <meta property="og:description"
+        content="Teste ton niveau en HTML, CSS et JS dans un jeu rétro-geek plein de glitchs et de style.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://geek-queezz.vercel.app">
+    <meta property="og:image" content="https://geek-queezz.vercel.app/assets/preview.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Geek_Queezz - Jeu quiz rétro pour devs">
+    <meta name="twitter:description"
+        content="3 essais. Des questions geek. Un max de style. Tente de battre le high score !">
+    <meta name="twitter:image" content="https://geek-queezz.vercel.app/assets/preview.png">
+    <meta name="theme-color" content="#000000">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="output.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Press+Start+2P&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="bg-[#0d0d0d] text-gray-50 flex items-center min-w-screen min-h-screen justify-center overflow-hidden relative">
+    <div style="background-image: url(/public/images/noise-bg.jpg); mix-blend-mode: overlay;" class="min-h-screen w-full absolute top-0 left-0 noise"></div>
+    
+    <div style="background-image: url(/public/images/noise-bg.jpg); mix-blend-mode: overlay;" class="min-h-screen w-full absolute top-72 left-0 noise"></div>
+    <!-- L'écran de bienvenue pour les premiers users -->
+    <div class="welcome flex md:border border-[#00ff00] flex-col gap-3 p-6 h-[650px] items-center justify-center md:max-w-[600px] ping">
+        <h1 class="glitch-text text-4xl" data-text="Welcome on Geek_Quizz">Welcome on Geek_Quizz</h1>
+        <h2 class="text-red-600 md:text-xl text-center">Tu es la bienvenue cher geek...</h2>
+        <img src="/public/images/logo.png" alt="Geek Avatar Pixel Art">
+        <div class="greeting flex flex-col gap-4 content-center w-[500px] m-auto text-center">
+            <h1 class="blind"> [ SYSTEM_BOOTING_...]</h1>
+            <li>> Initialisation du protocole GEEK_QUEEZZ...</li>
+            <li>> Connexion au cerveau du joueur...</li>
+
+            <h1 class="blind access">[ ACCÈS RESTREINT ❌]</h3>
+                <li class="pass"> > Entrez votre passe (pseudo de geek) :</li>
+        </div>
+        <form class="pseudoForm flex flex-col gap-5" action="" id="pseudo">
+            <input style="padding: 10px;" class="pseudo border outline-none" name="pseudo" id="pseudo" placeholder="votre pseudo de geek">
+            <button type="submit"
+                class="m-1 w-[250px] submit cursor-pointer min-h-[50px] hover:bg-neutral-700 hover:scale-90 duration-200 transition-all">
+                Commencer
+            </button>
+        </form>
+    </div>
+    <!-- <div class="w-[90%] h-[95vh] border overflow-hidden overflow-y-auto">
+        <div class="border w-full h-[80px] sticky top-0 bg-neutral-600">
+            <div class=" h-full">
+                <img class="w-[150px] h-full" src="public/images/logo.png" alt="">
+            </div>
+        </div>
+
+        <div class="flex h-full">
+            <div class="flex flex-col w-[200px] border h-full">
+                <li class="border h-[60px] flex items-center justify-center cursor-pointer hover:scale-95">
+                    <h3 class="w-[95%]">JavaScript</h3>
+                </li>
+                <li class="border h-[60px] flex items-center justify-center cursor-pointer hover:scale-95">HTML</li>
+                <li class="border h-[60px] flex items-center justify-center cursor-pointer hover:scale-95">CSS</li>
+                <li class="border h-[60px] flex items-center justify-center cursor-pointer hover:scale-95">PHP</li>
+            </div>
+        </div>
+    </div> -->
+    <script src="script.js"></script>
+    <script defer src="https://cloud.umami.is/script.js"
+        data-website-id="d5fa94f8-2915-4cfc-8a65-f089e5ba96f1"></script>
+</body>
+
+</html>
